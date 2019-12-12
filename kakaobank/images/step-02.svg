@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="32" viewBox="0 0 76 32">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="76" height="32" fill="#313C4A" fill-rule="nonzero" rx="16"/>
+        <g fill="#FFF" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="16" font-weight="bold">
+            <text transform="translate(18 8)">
+                <tspan x="35" y="14">2</tspan>
+            </text>
+            <text opacity=".6" transform="translate(18 8)">
+                <tspan x=".364" y="14">Step</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

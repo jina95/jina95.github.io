@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="276" height="246" viewBox="0 0 276 246">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" fill-rule="nonzero" stroke="#E0E0E0" d="M.5.5h275v245H.5z"/>
+        <g transform="translate(115 47)">
+            <circle cx="23" cy="23" r="23" fill="#FFE100"/>
+            <path fill="#000" d="M19.566 28.083l13.447-13.447 1.696 1.697-15.076 15.076-.067-.067-.067.067-7.79-7.79 1.696-1.696 6.161 6.16z"/>
+        </g>
+        <text fill="#000" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="18" font-weight="bold" transform="translate(36 47)">
+            <tspan x="35.486" y="78">송금 받기 신청완료</tspan>
+        </text>
+        <text fill="#888" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="13" transform="translate(36 47)">
+            <tspan x="36.733" y="105">신청이 완료된 해외송금은</tspan> <tspan x="14.978" y="125">입금 계좌로 자동 입금 처리됩니다.</tspan> <tspan x=".06" y="145">(수취 완료까지 약 2분 정도 소요됩니다.)</tspan>
+        </text>
+    </g>
+</svg>
