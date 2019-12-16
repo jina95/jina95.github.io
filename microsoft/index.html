@@ -18,7 +18,6 @@
         const 옵션 = {
             startSlide: 0,
             infiniteLoop: true,
-            // pager: false,
             moveSlides: 1,
             autoControls: true,
             auto: true,
@@ -35,6 +34,7 @@
             msSlider.reloadSlider(옵션)
         }
         
+        // 슬라이드 화면에 따라 on 에 따른 큐
         function checkSlide(num) {
             console.log(num);
             if (num === 0) {
@@ -43,8 +43,6 @@
                 msInner.classList.remove('on');
             }
         }
-
-        
     })
     </script>
 </head>
@@ -272,13 +270,6 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="slide_bottom clear ">
-                        <ul class="list ">
-                            <!-- <li class="page_1 on"><a  href="">1</a></li>
-                            <li class="page_2"><a href="">2</a></li>  -->
-                            <li class="play stop"><a href="">play</a></li> 
-                        </ul>
-                    </div>     
                 </div>
             </div>
             <!-- 메인컨텐츠 시작 -->
