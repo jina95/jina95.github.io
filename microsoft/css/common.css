@@ -1104,6 +1104,9 @@ main .follow img:hover {
 	.main_visual .m_vs_slide .text {
 		padding-top:100px;
 	}
+	div.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+		width:48%;
+	}
 	main .text em, main .text p {
 		font-size: 16px;
 		font-weight: 300;
@@ -1154,6 +1157,9 @@ main .follow img:hover {
 	}
 	.main_visual .m_vs_slide .text  {
 		padding-top:90px;
+	}
+	div.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right:42%;
 	}
 	
 	main .text h2, main .text h3 {
@@ -1227,6 +1233,9 @@ main .follow img:hover {
 	}
 	.main_visual .m_vs_slide .text  {
 		padding-top:80px;
+	}
+	div.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right:40%;
 	}
 	main .text h2, main .text h3 {
 		font-weight: 400;
