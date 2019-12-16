@@ -543,7 +543,8 @@
     searchOverMenu();
     function searchOverMenu() {
 
-        const search = header.querySelector('.icon_search')
+        const search = header.querySelector('.icon_search');
+        const textBox = search.querySelector('input');
         search.addEventListener('click', searchOpen);
         wrap.addEventListener('click', searchWork);
 
@@ -552,6 +553,10 @@
              // 만약 너가 누른애가 돋보기 모양이거나, '검색' 글자이거나, 인풋텍스트 창이라면 'on' 을 줘라.
             if (e.target.classList.contains('bx-search-alt-2') || e.target.textContent === '검색' || e.target.tagName === 'INPUT') {
                 search.className = 'icon_search on'
+            }
+            // input 창을 누르면 글자가 사라져라.
+            textBox.onclick = function () {
+                textBox.value = ''
             }
         }
 
@@ -562,7 +567,8 @@
             if (e.target.classList.contains('bx-search-alt-2') || targetMother.classList.contains('icon_search')) return
             // 리무브체크함수 
             if (removeCheck()) {
-                search.classList.remove('on')
+                search.classList.remove('on');
+                textBox.value = 'Microsoft.com 검색' // on 을 지울때는 벨류값도 다시 원래처럼 넣어줘야 하기때문에.
             }
             function removeCheck() {
                 // html 까지 패런츠노드로 올라가서 확인한다.
