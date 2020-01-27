@@ -711,7 +711,7 @@ main > .main_visual {
 }
 .card_slide .bx-wrapper {
 	/* max-width:1080px; */
-	max-width:720px; 
+	max-width:720px !important;
 	padding-left:170px;
 	padding-right:170px;
 	border: none;
