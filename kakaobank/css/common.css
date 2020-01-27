@@ -711,7 +711,7 @@ main > .main_visual {
 }
 .card_slide .bx-wrapper {
 	/* max-width:1080px; */
-	max-width:720px !important;
+	/* max-width:720px !important; */
 	padding-left:170px;
 	padding-right:170px;
 	border: none;
@@ -736,6 +736,9 @@ main > .main_visual {
 	width: 535px; 
 } */
 
+.card_slide_inner.clear li{
+	width:240px !important;
+}
 
 .main_card .card_slide li img {
 	margin-top:32px;
