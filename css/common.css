@@ -46,10 +46,19 @@ section .inner {
 	padding:0 28px;
 	/* background-color: whitesmoke; */
 }
+section h2 {
+	font-size:5rem;
+	margin-top:80px;
+	margin-bottom: 58px;
+}
 .clear:after {
 	content: '';
 	display: block;
 	clear: both;
+}
+.line {
+	display: inline-block;
+	box-shadow: inset 0 -15px 0 #fdf631;
 }
 
 /* header */
@@ -141,11 +150,11 @@ section.top .scroll_icon {
 
 section.about {
 	/* background-color: teal; */
-	height:100vh;
+	/* height:100vh; */
 }
 section.about h2 {
-	font-size:5rem;
-	margin-top:170px;
+	/* margin-top:170px; */
+	margin-top:80px;
 	margin-bottom: 58px;
 }
 section.about .inner > div {
@@ -197,11 +206,10 @@ section.about .inner .my_text {
 	/* margin-left:82px; */
 	margin-left:7.7067669172932%;
 	/* 82 / 1064 */
-	height:500px;
 	font-size:1.8rem;
 	font-weight: 400;
 	
-	background-color: red;
+	/* background-color: red; */
 }
 .text_information {
 	background-color: #ffffff;
@@ -217,8 +225,337 @@ section.about .inner .my_text {
 }
 
 .my_text .text_objective {
-	padding-top:34px;
+	margin-top:34px;
 }
-.my_text .text_objective span {
-	box-shadow: inset 0 -15px 0 #fdf631;
+
+.my_text .text_objective span:after {
+	/* display: block;
+	content: '';
+	clear: both;
+	top:10px;
+	left:0;
+	right: 0;
+	border:5px solid #fdf631;
+	z-index: 0;
+	position: absolute;
+	position: absolute; */
+	/* box-shadow: inset 0 -15px 0 #fdf631; */
+}
+.my_text .text_ability {
+	margin-top: 45px;
+}
+.my_text .text_ability li {
+	position: relative;
+	line-height: 35px;
+}
+.my_text .text_ability li:before {
+	position: absolute;
+	top: 8px;
+	display: block;
+	content: '';
+	clear: both;
+	/* border:1px solid black; */
+	width:20px;
+	height: 20px;
+	background: url('../images/bx-check.svg') no-repeat center;
+}
+.my_text .text_ability em {
+	padding-left:34px;
+}
+.my_text .text_ability span {
+	color: #e96161;
+}
+
+
+
+/* 도넛차트 */
+
+.card {
+	display: inline-block;
+	/* float: left; */
+	background: #fff;
+	margin-top: 50px;
+	/* 원래 margin-top 0 이었음 */
+}
+.donut-chart {
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.donut-chart .quad {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.donut-chart .chart-center {
+	position: absolute;
+	border-radius: 50%;
+}
+.donut-chart .chart-center span {
+	display: block;
+	text-align: center;
+}
+
+
+@keyframes chart4 {
+	0% {
+		-webkit-transform: rotate(0deg);
+   }
+	100% {
+		-webkit-transform: rotate(334.8deg);
+   }
+}
+@keyframes thirdchart4 {
+	0% {
+		-webkit-transform: rotate(0deg);
+   }
+	100% {
+		-webkit-transform: rotate(314.8deg);
+   }
+}
+@keyframes chartRotate2 {
+	0% {
+		-webkit-transform: rotate(0deg);
+   }
+	100% {
+		-webkit-transform: rotate(90deg);
+   }
+}
+@keyframes chartRotate3 {
+	0% {
+		-webkit-transform: rotate(0deg);
+   }
+	100% {
+		-webkit-transform: rotate(180deg);
+   }
+}
+@keyframes chartRotate4 {
+	0% {
+		-webkit-transform: rotate(0deg);
+   }
+	100% {
+		-webkit-transform: rotate(270deg);
+   }
+}
+@keyframes chartCover {
+	0%, 90% {
+		opacity: 1;
+   }
+	90%, 100% {
+		opacity: 0;
+   }
+}
+.donut-chart.chart4 {
+	width: 100px;
+	height: 100px;
+	background: #e1e1e1;
+}
+.donut-chart.chart4 .quad {
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	border-radius: 100% 0 0 0;
+	display: none;
+}
+.donut-chart.chart4 .quad.one {
+	transform: rotate(334.8deg);
+	transform-origin: bottom right;
+	background: #50c690;
+	animation: chart4 0.5s linear;
+	display: block;
+}
+.donut-chart.chart4 .quad.two {
+	transform: rotate(90deg);
+	transform-origin: bottom right;
+	background: #50c690;
+	animation: chartRotate2 0.5s linear;
+	display: block;
+}
+.donut-chart.chart4 .quad.three {
+	transform: rotate(180deg);
+	transform-origin: bottom right;
+	background: #50c690;
+	animation: chartRotate3 0.5s linear;
+	display: block;
+}
+.donut-chart.chart4 .quad.four {
+	transform: rotate(270deg);
+	transform-origin: bottom right;
+	background: #50c690;
+	animation: chartRotate4 0.5s linear;
+	display: block;
+}
+.donut-chart.chart4 .quad.top {
+	display: block;
+	background: #e1e1e1;
+	opacity: 0;
+	/* animation: chartCover 0.01s linear 0.4166666667s both; */
+	/* animation: chartCover 0.5s linear 0.4166666667s both; */
+}
+.donut-chart.chart4 .chart-center {
+	top: 16px;
+    left: 15px;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+}
+.donut-chart.chart4 .chart-center:after {
+	display: inline-block;
+	width: 100%;
+	font-size: 20px;
+	color: #50c690;
+	text-align: center;
+	line-height: 66px;
+	content: "90%";
+}
+.fourth_donut .donut-chart.chart4 .quad {
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	border-radius: 100% 0 0 0;
+	display: none;
+}
+.third_donut .donut-chart.chart4 .quad.one {
+	transform: rotate(314.8deg);
+	animation: thirdchart4 0.5s linear;
+	
+}
+.third_donut .donut-chart.chart4 .chart-center:after {
+	content: "80%";
+}
+
+.fourth_donut .donut-chart.chart4 .quad.one, .fourth_donut .donut-chart.chart4 .quad.two, .fourth_donut .donut-chart.chart4 .quad.three , .fourth_donut .donut-chart.chart4 .quad.four {
+	display: inline-block;
+	background-color:#50bca4;
+	animation: none;
+}
+.fourth_donut .donut-chart.chart4 .quad.one {
+	transform: rotate(0deg);
+}
+.fourth_donut .donut-chart.chart4 .chart-center:after {
+	content: "ing";
+}
+.card > div {
+	text-align: center;
+	/* background: yellow; */
+	padding:0 21px;
+	float: left;
+}
+
+.card span {
+	margin-top:10px;
+	/* border:1px solid black; */
+	color: #989898;
+}
+
+
+.portfolio {
+	display: inline-block;
+	/* background-color: teal; */
+}
+.portfolio .port_contents {
+	display: inline-block;
+	width:100%;
+}
+.portfolio .port_contents > li {
+	display: inline-block;
+	width:100%;
+	padding-bottom: 100px;
+}
+.portfolio .port_display {
+	width: 54vw;
+}
+.portfolio .port_display > a{
+	display: inline-block;
+}
+.portfolio .port_display > a > img{
+	width:100%;
+}
+.port .port_workAbout {
+	width:calc(100% - 58px - 54vw );
+	/* background-color: violet; */
+}
+
+
+.workAbout_text > * {
+	display: block;
+}
+.port_workAbout .number, .port_workAbout em {
+	font-size:3.5rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.workAbout_text .sub {
+	font-size: 2.25rem;
+	margin-bottom: 10px;
+}
+.workAbout_text p {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	margin-bottom: 20px;
+}
+.workAbout_text p > b {
+	color:#06a07e;
+}
+.workAbout_text span.line {
+	display: inline-block;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.workAbout_btn > button {
+	display: block;
+	width:100%;
+	font-size:2.2rem;
+	font-weight: bold;
+	line-height: 4rem;
+	color: #fdf403;
+	background-color: #06a07e;	
+	border: none;
+	margin-bottom: 10px;
+}
+.workAbout_btn > button:hover {
+	color: #000000;
+	background-color: #fddb31;
+}
+
+
+.port.first .port_display {
+	float:left
+} 
+.port.first .port_workAbout {
+	float:right
+} 
+.port.second .port_display {
+	float:right
+} 
+.port.second .port_workAbout {
+	float:left
+} 
+
+
+
+
+/* footer */
+footer {
+	text-align: center;
+	background-color: #fffae5;
+	padding:30px 0;
+}
+footer > * {
+	display: block;
+}
+footer > strong {
+	font-size:5rem;
+	color: #06a07e;
+	padding-bottom:30px;
+}
+footer > span {
+	font-size:1.5rem;
+	font-weight: lighter;
+	line-height: 2.2rem;
+	color: #666666;
 }
