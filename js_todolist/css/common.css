@@ -87,8 +87,8 @@ form > input {
     border-radius: 20px;
     background-color: #ffffff;
     color:#040DBF;
-    font-size: 40px;
     font-weight: 900;
+    font-size: 40px;
 }
 .s_mother {
     border-bottom: 4px solid #040DBF;
@@ -156,7 +156,7 @@ button.edit {
     top:24px;
     left:35px;
     color:#040DBF;
-    font-size:24px;
     font-weight: 800;
+    font-size:24px;
 }
 
