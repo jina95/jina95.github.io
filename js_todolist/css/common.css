@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* common */
+form > input {
+    display: block;
+    width:calc(100% - 20px);
+    padding:10px;
+    border: transparent;
+    background-color: #dce3fa;
+    text-align: center;
+}
+
+/* wrap */
+.wrap {
+    width:100%;
+}
+.checklist {
+    position: relative;
+    width:730px;
+    min-height:500px; 
+    padding: 63px 35px 36px;
+    margin: 0 auto;
+    background-color: #C2CEF2;
+}
+
+.check_inner {
+    border:4px solid #040DBF;
+}
+.check_inner  .h_mother {
+    padding:30px 0;
+    border-bottom: 4px solid #040DBF;
+    text-align: center;
+}
+.check_inner h1 {
+    display: inline-block;
+    padding:20px 20px; /* 보더더블 */
+    border:10px double #040DBF;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color:#040DBF;
+    font-size: 40px;
+    font-weight: 900;
+}
+.s_mother {
+    border-bottom: 4px solid #040DBF;
+}
+.s_mother > * {
+    color:#040DBF;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: center;
+}
+.s_mother span:first-child {
+    width:90%;
+    border-right: 4px solid #040DBF;
+}
+
+.toDoForm > input {
+    height:100px;
+}
+li {
+    padding:0 5px;
+    border-bottom: 2px solid #040DBF;
+    color: #040DBF;
+    line-height: 28px;
+    text-align: center;
+}
+
+.form,
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+
+.checked span {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through;
+}
+
+input[type=checkbox] { 
+    border:2px solid #040DBF;
+}
+button {
+    display: inline-block;
+    width:20px;
+    height:20px;
+    padding: 0;
+    border:none;
+    vertical-align: -4px;
+    cursor: pointer;
+}
+
+button.del {
+    background: url('../images/delete-24px.svg') no-repeat center center / contain ;
+}
+button.edit {
+    background: url('../images/create-24px.svg') no-repeat center center / contain ;
+}
+
+
+.clock {
+    position: absolute;
+    top:24px;
+    left:35px;
+    color:#040DBF;
+    font-size:24px;
+    font-weight: 800;
+}
+
