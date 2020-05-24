@@ -516,17 +516,20 @@ section.about .inner .my_text {
 	background-color: #06a07e;	
 	border: none;
 	margin-bottom: 10px;
+	box-shadow: 5px 5px #fddb31;
+	border-radius: 10px;
 }
 .workAbout_btn > button:hover {
 	color: #000000;
 	background-color: #fddb31;
+	box-shadow:5px 5px #06a07e;
 }
 
 
-.port.first .port_display {
+.port.first .port_display, .port.third .port_display {
 	float:left
 } 
-.port.first .port_workAbout {
+.port.first .port_workAbout, .port.third .port_workAbout {
 	float:right
 } 
 .port.second .port_display {
