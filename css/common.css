@@ -42,8 +42,10 @@ section {
 	/* box-sizing: border-box; */
 }
 section .inner {
-	width: calc( 100% - 56px );
-	padding:0 28px;
+	/* width: calc( 100% - 56px ); */
+	width: calc( 100% - 100px );
+	/* padding:0 28px; */
+	padding:0 50px;
 	/* background-color: whitesmoke; */
 }
 section h2 {
@@ -74,7 +76,7 @@ header a {
 	line-height: 80px;
 	padding:10px;
 	margin-right:70px;
-	border:1px solid black;
+	/* border:1px solid black; */
 	font-size:2rem;
 }
 header li:last-child  > a{
@@ -92,7 +94,7 @@ section.top h1 {
 	/* 142 / 702 */
 	text-align: center;
 	display: block;
-	border:1px solid black;
+	/* border:1px solid black; */
 	font-size: 7.2rem;
 	line-height: 1.6;
 }
@@ -109,7 +111,7 @@ section.top .top_tag {
 	left:0;
 	right:0;
 	text-align: right;
-	border:1px solid red;
+	/* border:1px solid red; */
 	/* padding-top: 18.134715vh; */
 	/* 140 / 772 */
 	/* margin-bottom: 8.95691vh; */
@@ -133,7 +135,7 @@ section.top .scroll_icon {
 	text-align: center;
 	color:white;
 	font-size: 2rem;
-	border: 1px solid white;
+	/* border: 1px solid white; */
 }
 .scroll_icon:after {
 	margin: 0 auto;
@@ -143,9 +145,33 @@ section.top .scroll_icon {
 	width: 10px;
 	height:16px;
 	padding-top:5px;
-	border:1px solid black;
 	background: url('../images/bx-chevrons-down.svg') no-repeat center ;
+	-webkit-animation: upDownScroll 0.3s infinite linear alternate;
+	-moz-animation: upDownScroll 0.3s infinite linear alternate;
+    -ms-animation: upDownScroll 0.3s infinite linear alternate;
+	animation: upDownScroll 0.3s infinite linear alternate;
+	/* animation: upDownScroll 0.5s infinite linear; */
 }
+
+@keyframes upDownScroll {
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+}
+@-webkit-keyframes fadeOut { 
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+ }
+@-moz-keyframes fadeOut { 
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+ }
+@-ms-keyframes fadeOut { 
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+ }
+
+
+
 
 
 section.about {
@@ -164,6 +190,7 @@ section.about .inner .my_main {
 	/* width: calc( 100% - 10px); */
 	/* width: 570px; */
 	width: calc( 50% - 10px );
+	max-width: 600px;
 	/* padding-bottom: 56.3689604685212vw; */
 	/* 770 / 1366 */
 	/* height: 770px; */
@@ -184,7 +211,6 @@ section.about .inner .my_main {
 }
 .my_main > .main_text {
 	padding:68px 40px 60px;
-	border:1px solid black;
 	text-align: center;
 }
 .my_main > .main_text > strong {
@@ -363,6 +389,9 @@ section.about .inner .my_text {
 	transform: rotate(334.8deg);
 	transform-origin: bottom right;
 	background: #50c690;
+	-webkit-animation: chart4 0.5s linear;
+    -moz-animation: chart4 0.5s linear;
+    -ms-animation: chart4 0.5s linear;
 	animation: chart4 0.5s linear;
 	display: block;
 }
@@ -370,6 +399,9 @@ section.about .inner .my_text {
 	transform: rotate(90deg);
 	transform-origin: bottom right;
 	background: #50c690;
+	-webkit-animation: chartRotate2 0.5s linear;
+    -moz-animation: chartRotate2 0.5s linear;
+    -ms-animation: chartRotate2 0.5s linear;
 	animation: chartRotate2 0.5s linear;
 	display: block;
 }
@@ -377,6 +409,9 @@ section.about .inner .my_text {
 	transform: rotate(180deg);
 	transform-origin: bottom right;
 	background: #50c690;
+	-webkit-animation: chartRotate3 0.5s linear;
+    -moz-animation: chartRotate3 0.5s linear;
+    -ms-animation: chartRotate3 0.5s linear;
 	animation: chartRotate3 0.5s linear;
 	display: block;
 }
@@ -384,6 +419,9 @@ section.about .inner .my_text {
 	transform: rotate(270deg);
 	transform-origin: bottom right;
 	background: #50c690;
+	-webkit-animation: chartRotate4 0.5s linear;
+    -moz-animation: chartRotate4 0.5s linear;
+    -ms-animation: chartRotate4 0.5s linear;
 	animation: chartRotate4 0.5s linear;
 	display: block;
 }
@@ -463,19 +501,23 @@ section.about .inner .my_text {
 .portfolio .port_contents > li {
 	display: inline-block;
 	width:100%;
-	padding-bottom: 100px;
+	padding-bottom: 160px;
 }
 .portfolio .port_display {
 	width: 54vw;
+	width: calc(50% - 100px);
+	width: 50%;
 }
 .portfolio .port_display > a{
 	display: inline-block;
+	max-width: 600px;
 }
 .portfolio .port_display > a > img{
 	width:100%;
 }
 .port .port_workAbout {
 	width:calc(100% - 58px - 54vw );
+	width: calc(50% - 100px);
 	/* background-color: violet; */
 }
 
@@ -509,15 +551,14 @@ section.about .inner .my_text {
 .workAbout_btn > button {
 	display: block;
 	width:100%;
-	font-size:2.2rem;
-	font-weight: bold;
-	line-height: 4rem;
+	max-width: 350px;
+	font-size:1.8rem;
+	/* font-weight: bold; */
+	line-height: 3rem;
 	color: #fdf403;
 	background-color: #06a07e;	
 	border: none;
 	margin-bottom: 10px;
-	box-shadow: 5px 5px #fddb31;
-	border-radius: 10px;
 }
 .workAbout_btn > button:hover {
 	color: #000000;
@@ -526,16 +567,16 @@ section.about .inner .my_text {
 }
 
 
-.port.first .port_display, .port.third .port_display {
+.port.first .port_display, .port.third .port_display, .port.fifth .port_display, .port.seventh .port_display{
 	float:left
 } 
-.port.first .port_workAbout, .port.third .port_workAbout {
+.port.first .port_workAbout, .port.third .port_workAbout, .port.fifth .port_workAbout, .port.seventh .port_workAbout {
 	float:right
 } 
-.port.second .port_display {
+.port.second .port_display, .port.fourth .port_display, .port.sixth .port_display, .port.eighth .port_display  {
 	float:right
 } 
-.port.second .port_workAbout {
+.port.second .port_workAbout, .port.fourth .port_workAbout, .port.sixth .port_workAbout, .port.eighth .port_workAbout {
 	float:left
 } 
 
@@ -561,4 +602,66 @@ footer > span {
 	font-weight: lighter;
 	line-height: 2.2rem;
 	color: #666666;
+}
+
+/* 1023 이하 */
+@media screen and (max-width:1023px) {
+	.my_main > .main_text > strong {
+		font-size: 2rem;
+	}
+	.my_main > .main_text > p {
+		font-size: 1.4rem;
+	}
+	section.about .inner .my_text {
+		font-size:1.4rem
+	}
+	.port_workAbout .number, .port_workAbout em {
+		font-size: 2.6rem;
+	}
+	.workAbout_text .sub {
+		font-size:2rem;
+	}
+	.workAbout_text span.line {
+		font-size: 1.6rem;
+	}
+	
+}
+/* 768 이하 */
+@media screen and (max-width:768px) {
+	section.top h1 {
+		font-size:4em;
+	}
+	section.top .top_tag {
+		top: 74.176638vh;
+	}
+	section.about .inner .my_main {
+		width: 100%;
+	}
+	section.about .inner .my_text {
+		width:100%;
+		margin-top:40px;
+	}
+	.portfolio .port_contents > li {
+		padding-bottom: 100px;
+	}
+
+	.portfolio .port_display {
+		text-align: center;
+	}
+	.portfolio .port_display {
+		width:100%;
+	}
+	.port .port_workAbout {
+		width:100%;
+		text-align: center;
+	}
+	.port_workAbout .number, .port_workAbout em {
+		font-size: 3rem;
+	}
+	.workAbout_btn > button {
+		margin:0 auto;
+		margin-bottom:10px;
+	}
+
+	
 }
