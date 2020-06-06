@@ -481,8 +481,11 @@ div.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 div.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
 	right:45%;
 }
-
-div.inner .bx-controls-direction a {
+.bx-wrapper div.inner .bx-controls-direction a {
+	display: none;
+}
+.bx-wrapper:hover div.inner .bx-controls-direction a {
+	display: block;
 	margin-top:0;
     font-size: 0;
     float: left;
@@ -492,19 +495,24 @@ div.inner .bx-controls-direction a {
 	z-index: 0;
 	top:43.6817472698908%
 }
-
-div.inner .bx-next,  div.inner .bx-next:hover, div.inner .bx-next:focus {
+.bx-wrapper .bx-controls-direction a {
+	display: none;
+}
+.bx-wrapper:hover .bx-controls-direction a {
+	display: block;
+}
+.bx-wrapper div.inner .bx-next, .bx-wrapper div.inner .bx-next:hover, .bx-wrapper div.inner .bx-next:focus {
 	right:0;
 	background: rgba( 0, 0, 0, 0.5) url('../images/slide_arrow_right_white.svg') no-repeat 9px 8px;
 }
-div.inner .bx-prev, div.inner .bx-prev:hover,  div.inner .bx-prev:focus {
+.bx-wrapper div.inner .bx-prev, .bx-wrapper div.inner .bx-prev:hover, .bx-wrapper div.inner .bx-prev:focus {
 	left:0;
 	background: rgba( 0, 0, 0, 0.5) url('../images/slide_arrow_left_white.svg') no-repeat 12px 8px;
 }
-div.inner.on .bx-next,  div.inner.on .bx-next:hover, div.inner.on .bx-next:focus {
+.bx-wrapper div.inner.on .bx-next, .bx-wrapper div.inner.on .bx-next:hover, .bx-wrapper div.inner.on .bx-next:focus {
 	background: rgba(255, 255, 255, 0.5) url('../images/slide_arrow_right.svg') no-repeat 9px 8px;
 }
-div.inner.on .bx-prev, div.inner.on .bx-prev:hover,  div.inner.on .bx-prev:focus {
+.bx-wrapper div.inner.on .bx-prev, .bx-wrapper div.inner.on .bx-prev:hover, .bx-wrapper div.inner.on .bx-prev:focus {
 	background: rgba(255, 255, 255, 0.5) url('../images/slide_arrow_left.svg') no-repeat 12px 8px;
 }
 
