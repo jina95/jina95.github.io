@@ -109,7 +109,7 @@ section.top .top_tag {
 	position: absolute;
 	top: 88.1766381766382vh;
 	left:0;
-	right:0;
+	right:1vw;
 	text-align: right;
 	/* border:1px solid red; */
 	/* padding-top: 18.134715vh; */
@@ -525,6 +525,7 @@ section.about .inner .my_text {
 .workAbout_text > * {
 	display: block;
 }
+
 .port_workAbout .number, .port_workAbout em {
 	font-size:3.5rem;
 	font-weight: bold;
@@ -564,6 +565,11 @@ section.about .inner .my_text {
 	color: #000000;
 	background-color: #fddb31;
 	box-shadow:5px 5px #06a07e;
+}
+
+/* btn이 하나일때 */
+.port_workAbout .btn_one_text .number, .port_workAbout .btn_one_text  em, .workAbout_text.btn_one_text p, .workAbout_text.btn_one_text span.line {
+	margin-bottom: 40px;
 }
 
 
