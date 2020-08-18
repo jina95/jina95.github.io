@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&display=swap&subset=korean');
 
 
-/* reset */
+/* -------------------- reset -------------------- */
 html {font-size:10px;}
 body {
 	font:normal 12px 'Noto Sans KR', sans-serif;
@@ -26,27 +26,20 @@ em {font-style: normal}
 input:focus { outline: none;}
 
 
-/* layout */
+/* -------------------- layout -------------------- */
 .wrap {width: 100%; position: relative;}
 header {width: calc(100% - 56px); background-color: #fce152; height:80px; padding:0 28px;} 
 main {width: 100%; background: red;}
-/* main .inner {width:90.03984% ; margin:0 auto;max-width: 1600px; }
-footer {clear:both; width:100%; background-color: #EEEEEE;}
-footer > .inner {width:90.03984% ; margin:0 auto;} */
 
-/* common */
+
+/* -------------------- common -------------------- */
 section {
 	width: 100%;
-	/* padding:0 28px; */
 	background-color: #ffffff;
-	/* box-sizing: border-box; */
 }
 section .inner {
-	/* width: calc( 100% - 56px ); */
 	width: calc( 100% - 100px );
-	/* padding:0 28px; */
 	padding:0 50px;
-	/* background-color: whitesmoke; */
 }
 section h2 {
 	font-size:5rem;
@@ -63,7 +56,12 @@ section h2 {
 	box-shadow: inset 0 -15px 0 #fdf631;
 }
 
-/* header */
+/* btn이 하나일때 */
+.port_workAbout .btn_one_text .number, .port_workAbout .btn_one_text  em, .workAbout_text.btn_one_text p, .workAbout_text.btn_one_text span.line {
+	margin-bottom: 40px;
+}
+
+/* -------------------- header -------------------- */
 header {
 	position: absolute;
 	top:100vh;
@@ -76,13 +74,12 @@ header a {
 	line-height: 80px;
 	padding:10px;
 	margin-right:70px;
-	/* border:1px solid black; */
 	font-size:2rem;
 }
 header li:last-child  > a{
 	margin-right:14px;
 }
-/* main */
+/* -------------------- main -------------------- */
 section.top {
 	height: 100vh;
 	background-color: #06a07e;
@@ -94,7 +91,6 @@ section.top h1 {
 	/* 142 / 702 */
 	text-align: center;
 	display: block;
-	/* border:1px solid black; */
 	font-size: 7.2rem;
 	line-height: 1.6;
 }
@@ -111,17 +107,11 @@ section.top .top_tag {
 	left:0;
 	right:1vw;
 	text-align: right;
-	/* border:1px solid red; */
-	/* padding-top: 18.134715vh; */
-	/* 140 / 772 */
-	/* margin-bottom: 8.95691vh; */
-	/* 89 / 772 */
 }
 section.top .top_tag > * {
 	font-size: 2rem;
 	line-height: 1.3;
 	display: block;
-
 }
 section.top .top_tag strong {
 	color: white;
@@ -135,7 +125,6 @@ section.top .scroll_icon {
 	text-align: center;
 	color:white;
 	font-size: 2rem;
-	/* border: 1px solid white; */
 }
 .scroll_icon:after {
 	margin: 0 auto;
@@ -172,14 +161,7 @@ section.top .scroll_icon {
 
 
 
-
-
-section.about {
-	/* background-color: teal; */
-	/* height:100vh; */
-}
 section.about h2 {
-	/* margin-top:170px; */
 	margin-top:80px;
 	margin-bottom: 58px;
 }
@@ -187,14 +169,8 @@ section.about .inner > div {
 	float: left;
 }
 section.about .inner .my_main {
-	/* width: calc( 100% - 10px); */
-	/* width: 570px; */
 	width: calc( 50% - 10px );
 	max-width: 600px;
-	/* padding-bottom: 56.3689604685212vw; */
-	/* 770 / 1366 */
-	/* height: 770px; */
-	/* height: 500px; */
 	margin: 10px 0 0 10px;
 	background-color: #fffae5;
 	box-shadow: -10px -10px #fddb31 ;
@@ -205,7 +181,6 @@ section.about .inner .my_main {
 	padding-bottom: 341px;
 	margin:0 auto;
 	margin-top:42px;
-	/* border:1px solid black; */
 	border-radius: 50%;
 	background: url('../images/main_img.jpeg') no-repeat center -150px / 590px auto;
 }
@@ -215,7 +190,6 @@ section.about .inner .my_main {
 }
 .my_main > .main_text > strong {
 	font-size:2.6rem;
-	/* 1rem = 10px */
 	font-weight: 400;
 	color: #008e6f;
 	padding-bottom:22px;
@@ -229,13 +203,10 @@ section.about .inner .my_text {
 	width:42.293233%;
 	display: block;
 	padding-top:20px;
-	/* margin-left:82px; */
 	margin-left:7.7067669172932%;
 	/* 82 / 1064 */
 	font-size:1.8rem;
 	font-weight: 400;
-	
-	/* background-color: red; */
 }
 .text_information {
 	background-color: #ffffff;
@@ -254,19 +225,6 @@ section.about .inner .my_text {
 	margin-top:34px;
 }
 
-.my_text .text_objective span:after {
-	/* display: block;
-	content: '';
-	clear: both;
-	top:10px;
-	left:0;
-	right: 0;
-	border:5px solid #fdf631;
-	z-index: 0;
-	position: absolute;
-	position: absolute; */
-	/* box-shadow: inset 0 -15px 0 #fdf631; */
-}
 .my_text .text_ability {
 	margin-top: 45px;
 }
@@ -280,7 +238,6 @@ section.about .inner .my_text {
 	display: block;
 	content: '';
 	clear: both;
-	/* border:1px solid black; */
 	width:20px;
 	height: 20px;
 	background: url('../images/bx-check.svg') no-repeat center;
@@ -293,206 +250,49 @@ section.about .inner .my_text {
 }
 
 
-
-/* 도넛차트 */
-
+/* ------------------------ 그래프 이미지 --------------------------- */
 .card {
 	display: inline-block;
-	/* float: left; */
 	background: #fff;
 	margin-top: 50px;
-	/* 원래 margin-top 0 이었음 */
 }
-.donut-chart {
+.card .graph {
 	position: relative;
-	border-radius: 50%;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-.donut-chart .quad {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.donut-chart .chart-center {
-	position: absolute;
-	border-radius: 50%;
-}
-.donut-chart .chart-center span {
-	display: block;
+	margin-bottom: 10px;
 	text-align: center;
-}
-
-
-@keyframes chart4 {
-	0% {
-		-webkit-transform: rotate(0deg);
-   }
-	100% {
-		-webkit-transform: rotate(334.8deg);
-   }
-}
-@keyframes thirdchart4 {
-	0% {
-		-webkit-transform: rotate(0deg);
-   }
-	100% {
-		-webkit-transform: rotate(314.8deg);
-   }
-}
-@keyframes chartRotate2 {
-	0% {
-		-webkit-transform: rotate(0deg);
-   }
-	100% {
-		-webkit-transform: rotate(90deg);
-   }
-}
-@keyframes chartRotate3 {
-	0% {
-		-webkit-transform: rotate(0deg);
-   }
-	100% {
-		-webkit-transform: rotate(180deg);
-   }
-}
-@keyframes chartRotate4 {
-	0% {
-		-webkit-transform: rotate(0deg);
-   }
-	100% {
-		-webkit-transform: rotate(270deg);
-   }
-}
-@keyframes chartCover {
-	0%, 90% {
-		opacity: 1;
-   }
-	90%, 100% {
-		opacity: 0;
-   }
-}
-.donut-chart.chart4 {
-	width: 100px;
-	height: 100px;
-	background: #e1e1e1;
-}
-.donut-chart.chart4 .quad {
-	width: 50px;
-	height: 50px;
-	top: 0;
-	left: 0;
-	border-radius: 100% 0 0 0;
-	display: none;
-}
-.donut-chart.chart4 .quad.one {
-	transform: rotate(334.8deg);
-	transform-origin: bottom right;
-	background: #50c690;
-	-webkit-animation: chart4 0.5s linear;
-    -moz-animation: chart4 0.5s linear;
-    -ms-animation: chart4 0.5s linear;
-	animation: chart4 0.5s linear;
-	display: block;
-}
-.donut-chart.chart4 .quad.two {
-	transform: rotate(90deg);
-	transform-origin: bottom right;
-	background: #50c690;
-	-webkit-animation: chartRotate2 0.5s linear;
-    -moz-animation: chartRotate2 0.5s linear;
-    -ms-animation: chartRotate2 0.5s linear;
-	animation: chartRotate2 0.5s linear;
-	display: block;
-}
-.donut-chart.chart4 .quad.three {
-	transform: rotate(180deg);
-	transform-origin: bottom right;
-	background: #50c690;
-	-webkit-animation: chartRotate3 0.5s linear;
-    -moz-animation: chartRotate3 0.5s linear;
-    -ms-animation: chartRotate3 0.5s linear;
-	animation: chartRotate3 0.5s linear;
-	display: block;
-}
-.donut-chart.chart4 .quad.four {
-	transform: rotate(270deg);
-	transform-origin: bottom right;
-	background: #50c690;
-	-webkit-animation: chartRotate4 0.5s linear;
-    -moz-animation: chartRotate4 0.5s linear;
-    -ms-animation: chartRotate4 0.5s linear;
-	animation: chartRotate4 0.5s linear;
-	display: block;
-}
-.donut-chart.chart4 .quad.top {
-	display: block;
-	background: #e1e1e1;
-	opacity: 0;
-	/* animation: chartCover 0.01s linear 0.4166666667s both; */
-	/* animation: chartCover 0.5s linear 0.4166666667s both; */
-}
-.donut-chart.chart4 .chart-center {
-	top: 16px;
-    left: 15px;
-    width: 70px;
-    height: 70px;
-    background: #fff;
-}
-.donut-chart.chart4 .chart-center:after {
-	display: inline-block;
-	width: 100%;
-	font-size: 20px;
-	color: #50c690;
-	text-align: center;
-	line-height: 66px;
-	content: "90%";
-}
-.fourth_donut .donut-chart.chart4 .quad {
-	width: 50px;
-	height: 50px;
-	top: 0;
-	left: 0;
-	border-radius: 100% 0 0 0;
-	display: none;
-}
-.third_donut .donut-chart.chart4 .quad.one {
-	transform: rotate(314.8deg);
-	animation: thirdchart4 0.5s linear;
-	
-}
-.third_donut .donut-chart.chart4 .chart-center:after {
-	content: "80%";
-}
-
-.fourth_donut .donut-chart.chart4 .quad.one, .fourth_donut .donut-chart.chart4 .quad.two, .fourth_donut .donut-chart.chart4 .quad.three , .fourth_donut .donut-chart.chart4 .quad.four {
-	display: inline-block;
-	background-color:#50bca4;
-	animation: none;
-}
-.fourth_donut .donut-chart.chart4 .quad.one {
-	transform: rotate(0deg);
-}
-.fourth_donut .donut-chart.chart4 .chart-center:after {
-	content: "ing";
-}
-.card > div {
-	text-align: center;
-	/* background: yellow; */
 	padding:0 21px;
 	float: left;
 }
-
-.card span {
-	margin-top:10px;
-	/* border:1px solid black; */
-	color: #989898;
+.card .graph-donut {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.card .graph-ninety {
+	background: url('../images/graph_90.png') no-repeat center/ 100% 100%;
+}
+.card .graph-eighty {
+	background: url('../images/graph_80.png') no-repeat center/ 100% 100%;
+}
+.card .graph-ing {
+	background: url('../images/graph_ing.png') no-repeat center/ 100% 100%;
 }
 
+.card .graph .graph-percent {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	color: #06a07e;
+}
+.card .graph .graph-name {
+	color: #666666;
+}
 
+/* ---------------------------------------------------------------- */
 .portfolio {
 	display: inline-block;
-	/* background-color: teal; */
 }
 .portfolio .port_contents {
 	display: inline-block;
@@ -518,7 +318,6 @@ section.about .inner .my_text {
 .port .port_workAbout {
 	width:calc(100% - 58px - 54vw );
 	width: calc(50% - 100px);
-	/* background-color: violet; */
 }
 
 
@@ -554,7 +353,6 @@ section.about .inner .my_text {
 	width:100%;
 	max-width: 350px;
 	font-size:1.8rem;
-	/* font-weight: bold; */
 	line-height: 3rem;
 	color: #fdf403;
 	background-color: #06a07e;	
@@ -567,10 +365,7 @@ section.about .inner .my_text {
 	box-shadow:5px 5px #06a07e;
 }
 
-/* btn이 하나일때 */
-.port_workAbout .btn_one_text .number, .port_workAbout .btn_one_text  em, .workAbout_text.btn_one_text p, .workAbout_text.btn_one_text span.line {
-	margin-bottom: 40px;
-}
+
 
 
 .port.first .port_display, .port.third .port_display, .port.fifth .port_display, .port.seventh .port_display{
@@ -589,7 +384,7 @@ section.about .inner .my_text {
 
 
 
-/* footer */
+/* -------------------- footer -------------------- */
 footer {
 	text-align: center;
 	background-color: #fffae5;
@@ -610,6 +405,9 @@ footer > span {
 	color: #666666;
 }
 
+
+
+/* -------------------- 미디어쿼리 -------------------- */
 /* 1023 이하 */
 @media screen and (max-width:1023px) {
 	.my_main > .main_text > strong {
