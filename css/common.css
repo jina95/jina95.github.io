@@ -217,8 +217,13 @@ section.about .inner .my_text {
 .my_text .text_information span {
 	color: #666666;
 }
+
 .my_text .text_information strong {
 	font-weight: 400;
+}
+
+.my_text .text_information .github {
+	color: #008e6f;
 }
 
 .my_text .text_objective {
