@@ -1,4 +1,3 @@
-
 // btn hover 했을 때 frameTools move 이벤트
 // overwork&outwork 는 헤드오픈 함수에서도 쓰이기 때문에 전역에 내놨다.
 const wrap = document.querySelector('.wrap')
