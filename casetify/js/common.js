@@ -6,33 +6,6 @@ const headerCart = descMenuEtc.querySelector('.header_cart')
 const mobileMenu = document.querySelector('.header_mobile')
 
 
-tabWork()
-function tabWork(){
-    // console.log(window.event.keyCode);
-    
-    // if(window.e)
-    // window.onkeydown = function(e){
-    //     console.log(e.key);
-        
-        // if(!KeyboardEvent.key === 'Tab') return;
-        // console.log(e);
-        
-        // if(!.keyCode === 9)return
-        // console.log(window.event.keyCode);
-        
-    // }
-    // let aEls = descMenu.querySelector('li > a')
-    // let ulEls = descMenu.querySelector('ul')
-    // for (let i = 0; i < aEls.length; i++) {
-    //     aEls[i].onkeydown = function(e){
-    //         console.log(this);
-            
-    //     }
-    //     // aEls[i].focus(ulEls[i].style.display = 'block')
-    // };
-}
-
-
 descMenuFun() // pc버전 menu header 오픈 함수
 function descMenuFun(){
     let openedMenu;
@@ -122,72 +95,6 @@ function headerEtcOverFun(){
     // headercart 에서 나온애가 안꺼진 상태에서 headerflag 로가면 cart 창이 꺼지고 flag 가 켜져야하는데,
     // 지금은 겹쳐지는 상황이다.
 }
-
-// 이 밑은 flag 와 cart 를 따로 준 함수인데, 겹치는 부분이 있지만 다른부분이 있어서 인지 밑에처럼 해야 오류는 덜하나
-// 코드적으로 깔끔하게 중복되지 않게 하려면 headerEtcOverFun() 로 묶는게 좋은데, 고민해 봐야 하는 문제일 듯 싶다.
-
-
-// flagFun();
-// function flagFun(){
-//     const headerFlag = descMenuEtc.querySelector('.header_lang')
-
-//     headerFlag.addEventListener('mouseover', overWork)
-//     headerFlag.addEventListener('mouseout', outWork)
-//     let openedMenu;
-//     function overWork(e){
-//         if(descMenu.querySelector('.on') || headerSearch.querySelector('.on')) return;
-//         let SelectUl = e.target.parentNode.querySelector('ul');
-//         if (SelectUl) {
-//             SelectUl.classList.add('on');
-//             openedMenu = SelectUl;
-//         } 
-//     }
-
-//     function outWork(e) {
-//         if (openedMenu === undefined || e.relatedTarget === null) return;
-
-//         if (!isDiv (e.relatedTarget)) {
-//             openedMenu.classList.remove('on');
-//         }
-        
-//         function isDiv(arrived) {
-//             if (arrived === null) return;
-//             while (arrived.tagName !== 'HTML' ) {
-//                 if (arrived === headerFlag ) {
-//                     return true;
-//                 }
-//                 arrived = arrived.parentNode; 
-//             }
-//             return false;
-//         }
-//     }
-// }
-
-// cartFun();
-// function cartFun(){
-//     headerCart.addEventListener('mouseover', cartOver);
-//     headerCart.addEventListener('mouseout', cartEnter);
-//     function cartOver(){
-//         if(descMenu.querySelector('.on') || headerSearch.querySelector('.on')) return;
-//         headerCart.classList.add('on');
-//     }
-//     function cartEnter(e){
-//         if (!isDiv (e.relatedTarget)) {
-//             headerCart.classList.remove('on');
-//         }
-//         function isDiv(arrived) {
-//             if (arrived === null) return;
-//             while (arrived.tagName !== 'HTML' ) {
-//                 if (arrived === headerCart ) {
-//                     return true;
-//                 }
-//                 arrived = arrived.parentNode; 
-//             }
-//             return false;
-//         }
-//     }
-// }
-
 
 
 headerSearchWork() // 헤더 서치아이콘 work

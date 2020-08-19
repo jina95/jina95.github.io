@@ -1,16 +1,14 @@
-
-
 let sizeCheck;
 const slideList = document.querySelector('.main_slide'); 
 let firstChild = slideList.firstElementChild;
 let slideWidth = firstChild.clientWidth;
 const slideContents = document.querySelectorAll('.slider_item');
+const slidePage = document.querySelector('.slide_btn');
 const slideLen = slideContents.length;
-// const slideSpeed = 1000; > 이게맞는속도
+
 const slideSpeed = 1000;
 const startNum = 0;
-const slidePage = document.querySelector('.slide_btn');
-// const pageDots = slidePage.querySelectorAll('li');
+
 
 
 
@@ -61,8 +59,6 @@ let curSlide = slideContents[curIndex];
 curSlide.classList.add('slide_active');
 pageDots[curIndex].classList.add('dot_active');
 
-// setInterval(slidePlay,5000); > 이게 맞는 속도
-// setInterval(slidePlay,4000);
 setInterval(slidePlay,4000);
 
 function slidePlay() {
@@ -84,30 +80,6 @@ function slidePlay() {
     pageDots[curIndex].classList.add('dot_active');
   };
 
-// function slidePlay(){
-//     if( curIndex <= slideLen - 1){
-//         slideList.style.transition = `all ${slideSpeed}ms ease`;
-//         slideList.style.transform = `translateX(-${slideWidth * (curIndex + 2)}px)`;
-//     }
-
-//     if( curIndex === slideLen - 1){ // 마지막 아이템일때는 트렌지션을 0 하고 첫번째복제본으로 돌려줘야한다.
-//         setTimeout(function(){
-//             slideList.style.transition ='0ms';
-//             slideList.style.transform = `translateX(-${slideWidth}px)`;
-                
-//         },slideSpeed)
-        
-//         curIndex = -1;
-//     }
-//     curSlide.classList.remove('slide_active');
-//     // pageDots[curIndex].classList.remove('dot_active');
-//     curIndex++;
-//     curSlide = slideContents[curIndex];
-//     curSlide.classList.add('slide_active');
-//     pageDots[curIndex].classList.add('dot_active');
-
-//     console.log(curIndex);
-// }
 
 window.addEventListener('resize', function(){
     clearTimeout(sizeCheck);
@@ -124,32 +96,6 @@ window.addEventListener('resize', function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let curDot;
-
-// for (let i = 0; i < pageDots.length; i++) {
-//     pageDots[i].data_index = i
-//     pageDots[i].addEventListener('click', pageDotsWork) 
-//     // console.log(pageDots[i].data_index);
-
-// }
-
-
-
 function pageDotsWork(e){
     e.preventDefault();
     curDot = document.querySelector('.dot_active');
@@ -158,12 +104,8 @@ function pageDotsWork(e){
     this.classList.add('dot_active');
     curSlide.classList.remove('slide_active');
     curIndex = this.data_index - 1 
-    // curIndex = Number(this.getAttribute('data-index'));
     console.log(curIndex);
     curSlide = slideContents[curIndex];
-    // curSlide.classList.add('slide_active');
-    // slideList.style.transition = slideSpeed + "ms";
-    // slideList.style.transform = `translateX(-${slideWidth * ( curIndex + 1 )}px)`;
     slidePlay();
 }
 
